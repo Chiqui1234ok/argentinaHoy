@@ -1,0 +1,5 @@
+@media (max-width: 1279px) { /* Entre 1023px y 1279px (tablets) */
+    .container {
+        width: var(--readWidthMobile);
+    }
+}

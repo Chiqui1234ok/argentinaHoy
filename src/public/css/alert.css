@@ -1,0 +1,53 @@
+.alert-bottom {
+    width: 50%;
+    left: 25%;
+    bottom: var(--gap);
+    position: fixed;
+    z-index: 10000;
+}
+.alert-bottom p {
+    line-height: 0;
+}
+.alert-bottom .close {
+    cursor: pointer;
+    margin-right: var(--gap);
+}
+.warn {
+    background: var(--violet-transparent);
+    border: 1px solid var(--violet);
+    color: var(--light);
+}
+.warn p {
+    color: inherit;
+}
+.success {
+    background: var(--green-transparent);
+    border: 1px solid var(--green);
+    color: var(--black);
+}
+.success p {
+    color: inherit;
+}
+/* Animation */
+.successToWarning {
+    animation-name: successToWarning;
+    animation-duration: 60s;
+}
+@-webkit-keyframes successToWarning {
+    0%{background: var(--green-transparent);}
+    10%{color: #fff;}
+    75%{--violet-transparentcolor: #fff;}
+    100%{--violet-transparentcolor: #fff;}
+}
+@-moz-keyframes successToWarning {
+    0%{background: var(--green-transparent);}
+    10%{color: #fff;}
+    75%{--violet-transparentcolor: #fff;}
+    100%{--violet-transparentcolor: #fff;}
+}
+@keyframes successToWarning {
+    0%{background: var(--green-transparent);}
+    10%{color: #fff;}
+    75%{--violet-transparentcolor: #fff;}
+    100%{--violet-transparentcolor: #fff;}
+}

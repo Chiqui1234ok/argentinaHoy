@@ -1,0 +1,32 @@
+@media (min-width: 1px) {
+    header nav, header nav.grid {
+        display: none;
+        justify-content: right;
+    }
+}
+@media (min-width: 1399px) {
+    header .grid-2 {
+        grid-template-columns: 250px auto;
+    }
+    header .menu {
+        display: none;
+    }
+    header nav.grid {
+        display: grid;
+    }
+    header nav {
+        display: block;
+        position: relative;
+        top: 0;
+        width: auto;
+        background: transparent;
+        z-index: 69;
+    }
+    header nav * {
+        z-index: 79;
+    }
+    header nav ul li {
+        display: inline;
+        margin: 0 var(--gap) 0 var(--gap);
+    }
+}

@@ -1,0 +1,46 @@
+/* Common */
+input:focus:required:invalid, textarea:focus:required:invalid {border: 1px solid var(--red);}
+input:required:valid, textarea:required:valid { border: 1px solid var(--green); }
+.light:disabled, .night:disabled {
+    opacity: 0.8;
+    border: 1px solid var(--red);
+}
+.light:disabled:hover, .night:disabled:hover {
+    background: var(--red);
+    color: var(--light);
+    cursor: not-allowed;
+}
+/* Light */
+a.light, button.light, input.light, textarea.light {
+    transition: all 0.3s ease-in-out;
+    background: var(--light-transparent);
+    color: var(--black);
+    font-family: sans-serif;
+    font-size: 17px;
+    border: 1px solid var(--green);
+    padding: 10px;
+    /* you can add margin via CSS classes */
+}
+a.light:hover, button.light:hover, input.light:hover, textarea.light:hover,
+a.light:focus, button.light:focus, input.light:focus, textarea.light:focus {
+    border: 1px solid var(--skyBlue);
+}
+button.light:hover, input[type=submit].light:hover, input[type=button].light:hover, button.light:focus, input[type=submit].light:focus, input[type=button].light:hover {
+    border: 1px solid var(--green);
+    background: var(--green-transparent);
+}
+/* Night */
+a.night, button.night, input.night, textarea.night {
+    transition: all 0.3s ease-in-out;    
+    background: var(--black-transparent);
+    color: var(--light);
+    font-family: sans-serif;
+    font-size: 17px;
+    border: 1px solid var(--green);
+    padding: 10px;
+    /* you can add margin via CSS classes */
+}
+a.night:hover, button.night:hover, input.night:hover, textarea.night:hover,
+a.night:focus, button.night:focus, input.night:focus, textarea.night:focus {
+    border: 1px solid var(--violet);
+}

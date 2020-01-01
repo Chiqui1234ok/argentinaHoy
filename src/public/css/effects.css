@@ -1,0 +1,12 @@
+.blur {
+    backdrop-filter: blur(5px); /* en caso de que backdrop filter no esté soportado por el navegador, la opacidad debe pasar de 0.8 a 0.9 */
+}
+/* Hover events (text) */
+/**/
+/* Hover events (box) */
+.hoverShadowGreen-box {
+    transition: box-shadow 0.5s ease-in-out;
+}
+.hoverShadowGreen-box:hover {
+    box-shadow: 0 1px 10px var(--green);
+}

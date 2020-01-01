@@ -1,0 +1,8 @@
+a {
+    color: var(--darkLink);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--darkLinkHover);
+    text-decoration: none;
+}

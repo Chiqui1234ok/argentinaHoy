@@ -1,0 +1,28 @@
+.grid, .grid-2, .grid-4, .grid-6 {
+    display: grid;
+}
+.grid { /* usefull for vertical alignment */
+    justify-items: center;
+    align-items: center;
+}
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+    .grid-2 .full-width { /* item full-screen size */
+        grid-column: 1 / span 2;
+    }
+.grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+    .grid-4 .full-width { /* item full-screen size */
+        grid-column: 1 / span 4;
+    }
+.grid-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+    .grid-6 .full-width { /* item full-screen size */
+        grid-column: 1 / span 6;
+    }
+.gap {
+    gap: var(--gap);
+}

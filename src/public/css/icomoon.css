@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?d8aqtt');
+  src:  url('../fonts/icomoon.eot?d8aqtt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?d8aqtt') format('truetype'),
+    url('../fonts/icomoon.woff?d8aqtt') format('woff'),
+    url('../fonts/icomoon.svg?d8aqtt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: none; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.refresh:before {
+  content: "\e900";
+}
+.sync:before {
+  content: "\e900";
+}
+.reload:before {
+  content: "\e900";
+}
+.loading:before {
+  content: "\e900";
+}
+.question-circle:before {
+  content: "\e911";
+}
+.envelope-open:before {
+  content: "\e901";
+}
+.envelope:before {
+  content: "\e902";
+}
+.youtube:before {
+  content: "\e903";
+}
+.linkedin-square:before {
+  content: "\e904";
+}
+.thumbs-up:before {
+  content: "\e912";
+}
+.facebook-square:before {
+  content: "\e905";
+}
+.bars:before {
+  content: "\e906";
+}
+.navicon:before {
+  content: "\e906";
+}
+.reorder:before {
+  content: "\e906";
+}
+.credit-card-alt:before {
+  content: "\e907";
+}
+.bitcoin:before {
+  content: "\e908";
+}
+.btc:before {
+  content: "\e908";
+}
+.money:before {
+  content: "\e909";
+}
+.check:before {
+  content: "\e90a";
+}
+.user-times:before {
+  content: "\e90b";
+}
+.group:before {
+  content: "\e90c";
+}
+.users:before {
+  content: "\e90c";
+}
+.user-plus:before {
+  content: "\e90d";
+}
+.user:before {
+  content: "\e90e";
+}
+.reddit-alien:before, .alien:before {
+  content: "\e90f";
+}
+.home:before {
+  content: "\e910";
+}
+
+i.fa, i.fas, .fa, .fas {
+  font-family: 'icomoon';
+  font-style: normal; /* prevent italic in <i> tags when using .fa or .fas class */
+}

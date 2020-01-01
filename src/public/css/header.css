@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    height: 73px;
+    top: 0;
+    left: 0;
+    background: var(--lightHeader);
+    z-index: 59;
+}
+header #logo {
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: url('../img/header-logo.png') center;
+    background-size: cover;
+}
+header.fixed {
+    position: fixed;
+}
+header * {
+    z-index: 69;
+}
+header .grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+header h1 {
+    font-size: 48px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: var(--darkBlue);
+    margin: 0;
+}
+header h1 span {
+    color: var(--green);
+    font-family: inherit;
+}
+header .menu {
+    display: block;
+    font-size: 48px;
+    text-align: right;
+}
+header a.menu {
+    color: var(--black);
+} 
+header a .bars:hover {
+    transition: all 0.5s ease-in-out;
+    color: var(--light);
+    transform: rotate(180deg);
+    cursor: pointer;
+}

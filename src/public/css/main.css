@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box; /* El padding está incluído en el tamaño especificado en el CSS */
+    z-index: inherit;
+}
+:root {
+    /* Paleta de colores */
+    --black: rgb(40, 40, 40); /* será convertido a 'night' en próximas versiones */
+        --black-transparent: rgba(40, 40, 40, 0.8); /* será convertido a 'night' en próximas versiones */
+    --light: rgb(240, 240, 240);
+        --light-transparent: rgba(240, 240, 240, 0.8);
+    --green: rgb(32, 235, 93);
+        --green-transparent: rgba(32, 235, 93, 0.8);
+    --yellow: rgb(235, 238, 74);
+        --yellow-transparent: rgba(235, 238, 74, 0.8);
+    --blue: rgb(70, 59, 214);
+        --blue-transparent: rgba(70, 59, 214, 0.8);
+    --skyBlue: rgb(81, 162, 255);
+    --darkBlue: rgb(46, 32, 168);
+        --darkBlue-transparent: rgba(46, 32, 168, 0.8);
+    --darkerBlue: rgb(40, 17, 139);
+    --violet: rgb(143, 74, 221);
+        --violet-transparent: rgba(143, 74, 221, 0.8);
+    --red: rgb(240, 25, 61);
+    /* Header */
+    --lightHeader: rgba(40, 140, 255, 0.8);
+    --darkHeader: rgb(25, 22, 39);
+    /* Footer */
+    --lightFooter: rgb(75, 56, 241);
+    /* Sizes */
+    --pSize: 18px;
+    --readWidth: 75%;
+    --readWidthMobile: 95%;
+    /* Margins */
+    --gap: 10px; /* standard gap (margin, padding, etc) for the base template */
+    /* Text colors */
+    --darkP: var(--black);
+    /* Link colors */
+    --lightLink: var(--green);
+    --darkLink: var(--darkBlue);
+        --darkLinkHover: var(--blue);
+}
+body {
+    width: 100%;
+    margin: 0;
+    clear: both;
+    content: "";
+    overflow-x: hidden;
+}
+html, body {
+    min-height: 100vh;
+}
+/* Base > Main */
+/* main {
+    
+} */
+main.center {
+    margin: 20px auto 20px auto;
+}
+/* Base > Size */
+.full-width { /* Ocupa todo el ancho disponible en el div.padre */
+    width: 100%;
+}
+.full-height { /* Ocupa todo el alto disponible de la pantalla */
+    height: 100vh;
+}
+.full-screen { /* Ocupa toda la pantalla */
+    width: 100vw;
+    height: 100vh;
+}
+/* Base > Margin */
+.margin {
+    margin: var(--gap);
+}   /* analizar si existe un macro para sintetizar "margin-*" en una sola */
+    .margin-top {
+        margin-top: var(--gap);
+    }
+    .margin-bottom {
+        margin-bottom: var(--gap);
+    }
+    .margin-left {
+        margin-left: var(--gap);
+    }
+    .margin-right {
+        margin-right: var(--gap);
+    }
+/* Base > Padding */
+.padding {
+    padding: var(--gap);
+}
+/* Base > Centerland */
+.center { /* horizontal center */
+    margin: 0 auto;
+}
+/* Base > Sharpness */
+.rounded {
+    border-radius: var(--gap);
+}
+/* Base > Boxes || Base > Widgets */
+.box.black {
+    background: var(--black-transparent);
+}
+.box.light, .box {
+    background: var(--light-transparent);
+}
+.box.green {
+    background: var(--green-transparent);
+}
+.box.yellow {
+    background: var(--yellow-transparent);
+}
+.box.blue {
+    background: var(--blue-transparent);
+}
+.box.violet {
+    background: var(--violet-transparent);
+}
+/* Base > Display */
+.inline {
+    display: inline;
+}
+.block {
+    display: block;
+}
+/* Base > Mouse cursors */
+.cursor-default {
+    cursor: default;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+/* Base > Mobile restrictions => in main-responsive.css */
+/* CSS Personalizado (exclusivo para la web en desarrollo y no pertenece a Reboot_strap */
+/* Fondos */
+.hero1 {
+    background: url('../img/wallpapers/hero1.webp') right;
+    background-size: cover;
+}
+.hero2 {
+    background: url('../img/wallpapers/hero-ethereum.png') center;
+    background-size: cover;
+}
+.bitcoin {
+    background: url('../img/wallpapers/bitcoin.jpg') center;
+    background-size: cover;
+}
+.buy-bitcoin-credit-cards {
+    background: url('../img/wallpapers/buy-bitcoin-credit-cards.png') center;
+    background-size: cover;
+}
