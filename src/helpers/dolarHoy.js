@@ -26,20 +26,30 @@ helpers.dolarHoy = (req, res, next) => { // middleware
             blue: 97
         }
     };
-    request('http://www.dolarhoy.com/', function (err, res, body) {
-    const dollar = {
+    const dollar = { // Model
         buy: {
-            official: parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.buy.official, 5) ),
-            blue: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.buy.blue, 5 ))
+            official: '',
+            blue: ''
         },
         sell: {
-            official: parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.sell.official, 5) ),
-            blue: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.sell.blue, 5 ))
+            official: '',
+            blue: ''
         }
-    }
+    };
+    request('http://www.dolarhoy.com/', function (err, res, body) {
+        dollar = {
+            buy: {
+                official: parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.buy.official, 5) ),
+                blue: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.buy.blue, 5 ))
+            },
+            sell: {
+                official: parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.sell.official, 5) ),
+                blue: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.sell.blue, 5 ))
+            }
+        };
+    });
     res.send(dollar);
     next();
-    });
     //
 };
 
