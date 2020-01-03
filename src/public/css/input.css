@@ -19,6 +19,7 @@ a.light, button.light, input.light, textarea.light {
     font-size: 17px;
     border: 1px solid var(--green);
     padding: 10px;
+    text-align: center;
     /* you can add margin via CSS classes */
 }
 a.light:hover, button.light:hover, input.light:hover, textarea.light:hover,
@@ -44,6 +45,7 @@ a.night, button.night, input.night, textarea.night {
     font-size: 17px;
     border: 1px solid var(--green);
     padding: 10px;
+    text-align: center;
     /* you can add margin via CSS classes */
 }
 a.night:hover, button.night:hover, input.night:hover, textarea.night:hover,

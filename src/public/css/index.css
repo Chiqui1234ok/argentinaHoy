@@ -59,6 +59,12 @@
 #index .rotate {
     transform: rotate(-90deg);
 }
+#buttons {
+    text-align: center;
+}
+#buttons.container {
+    width: 100%;
+}
 #display.grid-2 { /* dónde aparece el dólar hoy */
     grid-template-columns: 70% 30%;
     gap: var(--gap);
