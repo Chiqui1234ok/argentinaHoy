@@ -1,7 +1,7 @@
-.pulseSvg { /* usado para .fa-angle-down del index */
-    animation: pulseSvg 3s linear infinite;
+.pulseText { /* usado para .fa-angle-down del index */
+    animation: pulseText 3s linear infinite;
 }
-@keyframes pulseSvg {
+@keyframes pulseText {
     0% {
         color: transparent;
     }

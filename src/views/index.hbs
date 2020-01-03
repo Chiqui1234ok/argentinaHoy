@@ -1,4 +1,4 @@
-<div id="index" class="full-screen grid">
+<div id="index" class="full-screen grid padding"> <!-- Index -->
     <div class="grid-2 gap container center">
         <div id="que-somos" class="padding">
             <h1>Argentina Hoy <i class="fas fa-star" title="¡Agrega Argentina Hoy a favoritos!"></i></h1>
@@ -12,17 +12,10 @@
             <p>Dólar blue (compra) </p><div class="libre-dollar">${{dollar.buy.blue}}</div>
             <p>Dólar blue (venta) </p><div class="libre-dollar">${{dollar.sell.blue}}</div>
             <div class="full-width">
-                <a href="#bounty"><i class="fas fa-angle-down pulseSvg"></i></a>
+                <a href="#bounty" class="read-more pulseText"><span>Ver todo</span> <i class="rotate fas fa-angle-down"></i></a>
             </div>
         </div>
     </div>
-    {{!-- <div class="video-argentina">
-        <video width="100%" height="100%" autoplay muted loop>
-            <source src="video/argentina-en-8-bits.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-        </video>
-    </div> --}}
     <div id="argentina">
         <div class="skyBlue"></div>
         <div class="white"></div>
@@ -73,4 +66,53 @@
         </ul>
     </div>
     
+</div> <!-- !Index -->
+
+<div id="plans" class="full-screen grid padding">
+    <div class="grid-2 gap container center">
+        <div class="full-width padding box black">
+            <h1>Tenemos un plan</h1>
+            <p>Queremos que puedas acceder a toda la información de <strong>Argentina Hoy</strong> de forma fácil y rápida. Es por eso que ideamos tres planes que se adaptan a tus proyectos, ya sean hobbies o aplicaciones con gran número de visitas.</p>
+        </div>
+        <ul class="grid-3 minimal-list no-margin no-padding">
+            <li class="grid-2 gap box blue padding">
+                <h2 class="text-center"><i class="fas fa-users"></i> Plan gratuito</h2>
+                <p>Suficiente para hobistas o proyectos pequeños</p>
+                <ul class="grid-2 gap full-width">
+                    <li>200 solicitudes por día, ~72.000 al año</li>
+                    <li>Accedé al dólar hoy oficial y blue/libre</li>
+                </ul>
+            </li>
+            <li class="grid-2 gap box blue padding">
+                <h2 class="text-center"><i class="fas fa-coffee"></i> Plan profesional</h2>
+                <p>Ideal para grandes comercios y estadísticas en vivo</p>
+                <ul class="grid-2 gap full-width">
+                    <li>Incluye el pack gratuito, y además...</li>
+                    <li>Hasta 1200 solicitudes por día</li>
+                    <li>Acceso al euro hoy</li>
+                    <li>Acceso al Real (Brasil)</li>
+                    <li>Acceso al Peso Chileno y Uruguayo</li>
+                </ul class="grid-2 full-width">
+            </li>
+            <li class="grid-2 gap box blue padding">
+                <h2 class="text-center"><i class="fas fa-project-diagram"></i> Plan ilimitado</h2>
+                <p>Ideal para grandes softwares de investigación y/o data science</p>
+                <ul class="grid-2 gap full-width">
+                    <li>Incluye el pack profesional, y además...</li>
+                    <li>Hasta 5000 solicitudes por día</li>
+                    <li>Acceso a estadísticas poblacionales</li>
+                    <li>Acceso a estadísticas económicas</li>
+                    <li>Predicciones precisas mediante Machine Learning</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="video-argentina not-mobile"> <!-- video argentina -->
+            <video width="100%" height="100%" autoplay muted loop>
+                <source src="video/argentina-en-8-bits.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div> <!-- video argentina -->
+    </div>
 </div>

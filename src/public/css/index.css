@@ -53,14 +53,11 @@
 #index i.fas[title]:hover:after * {
     z-index: 89;
 }
-#index .video-argentina {
-    width: 40vw;
-    height: 100vh;
-    margin-left: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+#index .read-more {
+    font-size: 22px;
+}
+#index .rotate {
+    transform: rotate(-90deg);
 }
 #display.grid-2 { /* dónde aparece el dólar hoy */
     grid-template-columns: 70% 30%;
@@ -75,6 +72,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    z-index: 89;
 }
 /* .libre-dollar.text-border, .official-dollar.text-border {
     -webkit-text-stroke-width: 0.05em;
@@ -82,12 +80,12 @@
 } */
 /* bandera argentina de fondo */
 #argentina {
-    width: 250vw;
-    height: 250vh;
-    transform: rotate(45deg);
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(30deg);
     position: absolute;
-    top: -75vh;
-    right: -60vw;
+    top: -60vh;
+    right: -23vw;
     z-index: 0;
 }
 #argentina .skyBlue {
@@ -142,4 +140,19 @@
     opacity: 1;
     visibility: visible;
     transition: opacity .5s ease-in-out;
+}
+/* plans */
+#plans {
+    background: url('https://images2.alphacoders.com/698/698137.jpg') center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#plans * {
+    color: var(--light);
+}
+#plans .box.blue {
+    background: rgba(70, 59, 214, 0.9);
+}
+#plans .grid-3 li {
+    margin-bottom: var(--gap);
 }
