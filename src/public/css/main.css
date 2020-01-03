@@ -1,4 +1,5 @@
 * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box; /* El padding está incluído en el tamaño especificado en el CSS */
     z-index: inherit;
 }
@@ -8,19 +9,21 @@
         --black-transparent: rgba(40, 40, 40, 0.8); /* será convertido a 'night' en próximas versiones */
     --light: rgb(240, 240, 240);
         --light-transparent: rgba(240, 240, 240, 0.8);
-    --green: rgb(32, 235, 93);
+    --green: rgb(20, 207, 67);
         --green-transparent: rgba(32, 235, 93, 0.8);
-    --yellow: rgb(235, 238, 74);
+    --yellow: rgb(206, 209, 45);
         --yellow-transparent: rgba(235, 238, 74, 0.8);
-    --blue: rgb(70, 59, 214);
+    --blue: rgb(39, 25, 238);
         --blue-transparent: rgba(70, 59, 214, 0.8);
     --skyBlue: rgb(81, 162, 255);
+        --skyBlue-transparent: rgba(81, 162, 255, 0.8);
     --darkBlue: rgb(46, 32, 168);
         --darkBlue-transparent: rgba(46, 32, 168, 0.8);
     --darkerBlue: rgb(40, 17, 139);
     --violet: rgb(143, 74, 221);
         --violet-transparent: rgba(143, 74, 221, 0.8);
     --red: rgb(240, 25, 61);
+        --red-transparent: rgba(240, 25, 61, 0.8);
     /* Header */
     --lightHeader: rgba(40, 140, 255, 0.8);
     --darkHeader: rgb(25, 22, 39);
@@ -110,6 +113,9 @@ main.center {
 }
 .box.blue {
     background: var(--blue-transparent);
+}
+.box.skyBlue {
+    background: var(--skyBlue-transparent);
 }
 .box.violet {
     background: var(--violet-transparent);

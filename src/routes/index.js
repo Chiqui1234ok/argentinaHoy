@@ -1,12 +1,13 @@
 const router = require('express').Router(),
-request = require('request'),
-{ dolarHoy } = require('../helpers/dolarHoy');
+fetch = require('node-fetch');
 
-router.get('/', (req, res) => {
-    request('https://argentina-hoy.herokuapp.com/devs/dolar-hoy', function (body) {
-        // res.send(body);
-        console.log(body);
-        res.send('ok');
+router.get('/', async (req, res) => {
+    await fetch('https://argentina-hoy.herokuapp.com/devs/dolar-hoy', {method: 'Get'})
+    .then(res => res.json())
+    .then((dollar) => {
+        res.render('index', {
+            dollar
+        });
     });
 });
 

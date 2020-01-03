@@ -1,5 +1,5 @@
 /* Common */
-input:focus:required:invalid, textarea:focus:required:invalid {border: 1px solid var(--red);}
+input:focus:required, textarea:focus:required {border: 1px solid var(--red);}
 input:required:valid, textarea:required:valid { border: 1px solid var(--green); }
 .light:disabled, .night:disabled {
     opacity: 0.8;
@@ -28,6 +28,12 @@ a.light:focus, button.light:focus, input.light:focus, textarea.light:focus {
 button.light:hover, input[type=submit].light:hover, input[type=button].light:hover, button.light:focus, input[type=submit].light:focus, input[type=button].light:hover {
     border: 1px solid var(--green);
     background: var(--green-transparent);
+}
+/* Light bold */
+a.light.bold, button.light.bold, input.light.bold, textarea.light.bold {
+    background: var(--blue-transparent);
+    border: 1px solid var(--blue);
+    color: var(--light);
 }
 /* Night */
 a.night, button.night, input.night, textarea.night {

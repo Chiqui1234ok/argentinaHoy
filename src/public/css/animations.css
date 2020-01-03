@@ -1,0 +1,14 @@
+.pulseSvg { /* usado para .fa-angle-down del index */
+    animation: pulseSvg 3s linear infinite;
+}
+@keyframes pulseSvg {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: var(--black);
+    }
+    100% {
+        color: transparent;
+    }
+}
