@@ -31,3 +31,14 @@
         text-align: left;
     }
 }
+@media (max-width: 799px) {
+    #buttons.grid-2 {
+        grid-template-columns: 100%;
+    }
+    #display p {
+        font-size: 18px;
+    }
+    #display .official-dollar, #display .libre-dollar {
+        font-size: 18px;
+    }
+}

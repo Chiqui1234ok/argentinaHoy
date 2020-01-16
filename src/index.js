@@ -11,7 +11,7 @@ require('./database');
 require('./config/passport');
 
 // Configuración de puerto
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 
 // Vistas
 app.set('views', path.join(__dirname, 'views'));

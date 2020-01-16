@@ -19,22 +19,25 @@ helpers.dolarHoy = (req, view, next) => { // middleware
     const irrelevantCharacters = { // Caracteres existentes entre el final de la palabra "Dólar Libre" y el valor en sí, etc
         buy: {
             official: 48,
-            blue: 48 
+            unofficial: 48 
         }, 
         sell: {
             official: 97,
-            blue: 97
+            unofficial: 97,
         }
     };
     request('http://www.dolarhoy.com/', function (err, res, body) {
+        const officialSell = parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.sell.official, 5) );
         const dollar = {
             buy: {
                 official: parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.buy.official, 5) ),
-                blue: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.buy.blue, 5 ))
+                unofficial: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.buy.unofficial, 5 )),
+                turist: officialSell*1.3
             },
             sell: {
-                official: parseDollar( getValue(body, body.search('Banco Nación')+'Banco Nación'.length+irrelevantCharacters.sell.official, 5) ),
-                blue: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.sell.blue, 5 ))
+                official: officialSell,
+                unofficial: parseDollar( getValue(body, body.search('Dólar Libre')+'Dólar Libre'.length+irrelevantCharacters.sell.unofficial, 5 )),
+                turist: officialSell*1.3
             }
         };
         console.log(dollar);

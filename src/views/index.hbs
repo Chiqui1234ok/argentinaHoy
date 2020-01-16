@@ -4,15 +4,16 @@
             <h1>Argentina Hoy <i class="fas fa-star" title="¡Agrega Argentina Hoy a favoritos!"></i></h1>
             <p>Un sitio web para que te informes de todos los indicadores del país, a la vez que podés integrar estos datos a tu aplicación mediante <a href="#plans">nuestra API</a>.</p>
             <div id="buttons" class="grid-2 gap container">
-                <a href="/dev/api-tutorial" class="light bold padding rounded">Desarrolla</a>
-                <a href="/plans" class="light bold padding rounded">Nuestros servicios</a>
+                <a <!--href="/devs/api-tutorial"--> class="light bold padding rounded" onclick="alert('¡Estamos trabajando en ello! :D');">Desarrolla</a>
+                <a <!--href="/plans"--> class="light bold padding rounded" onclick="alert('¡Estamos trabajando en ello! :D');">Nuestros servicios</a>
             </div>
         </div>
-        <div id="display" class="grid-2">
-            <p>Dólar oficial (compra) <i class="fas fa-question-circle" title="Es probable que se te aplique el impuesto del 30%"></i> </p><div class="official-dollar">${{dollar.buy.official}}</div>
-            <p>Dólar oficial (venta) <i class="fas fa-question-circle" title="Es probable que se te aplique el impuesto del 30%"></i></p><div class="official-dollar">${{dollar.sell.official}}</div>
-            <p>Dólar blue (compra) </p><div class="libre-dollar">${{dollar.buy.blue}}</div>
-            <p>Dólar blue (venta) </p><div class="libre-dollar">${{dollar.sell.blue}}</div>
+        <div id="display" class="grid-2 gap padding">
+            <p>Dólar oficial (compra) <i class="fas fa-question-circle" title="Es probable que se te aplique el impuesto del 30%"></i> </p><div class="official-dollar cursor-default">${{dollar.buy.official}}</div>
+            <p>Dólar oficial (venta) <i class="fas fa-question-circle" title="Es probable que se te aplique el impuesto del 30%"></i></p><div class="official-dollar cursor-default">${{dollar.sell.official}}</div>
+            <p>Dólar turista <i class="fas fa-question-circle" title="El dólar turista es asequible desde cualquier cuenta bancaria dolarizada"></i></p><div class="turist-dollar cursor-default">${{dollar.sell.turist}}</div>
+            <p>Dólar blue (compra) </p><div class="libre-dollar cursor-default">${{dollar.buy.unofficial}}</div>
+            <p>Dólar blue (venta) </p><div class="libre-dollar cursor-default">${{dollar.sell.unofficial}}</div>
             <div class="full-width">
                 <a href="#bounty" class="read-more pulseText"><span>Ver todo</span> <i class="rotate fas fa-angle-down"></i></a>
             </div>
@@ -26,8 +27,8 @@
 </div>
 
 <!-- Bolsa -->
-<div id="bounty" class="box padding minimal-list">
-    <div id="title-bar" class="box skyBlue padding grid-2">
+<div id="bounty" class="box padding minimal-list rounded">
+    <div id="title-bar" class="box skyBlue padding grid-2 rounded">
         <div id="title">Bolsa y divisas</div>
         <a href="#"><i class="fas fa-times"></i></a>
     </div>
@@ -70,22 +71,21 @@
     
 </div> <!-- !Index -->
 
-<div id="plans" class="full-screen grid padding">
+{{!-- <div id="plans" class="full-screen grid padding">
     <div class="grid-2 gap container center">
         <div class="full-width padding box black">
             <h1>Tenemos un plan</h1>
             <p>Queremos que puedas acceder a toda la información de <strong>Argentina Hoy</strong> de forma fácil y rápida. Es por eso que ideamos tres planes que se adaptan a tus proyectos, ya sean hobbies o aplicaciones con gran número de visitas.</p>
         </div>
         <ul class="grid-3 minimal-list no-margin no-padding">
-            <li class="grid-2 gap box blue padding">
+            <li class="grid-2 gap box blue padding rounded">
                 <h2 class="text-center"><i class="fas fa-users"></i> Plan gratuito</h2>
                 <p>Suficiente para hobistas o proyectos pequeños</p>
                 <ul class="grid-2 gap full-width">
-                    <li>200 solicitudes por día, ~72.000 al año</li>
-                    <li>Accedé al dólar hoy oficial y blue/libre</li>
+                    <li>Solicitudes ilimitadas para acceder al dólar hoy (oficial y blue)</li>
                 </ul>
             </li>
-            <li class="grid-2 gap box blue padding">
+            <li class="grid-2 gap box blue padding rounded">
                 <h2 class="text-center"><i class="fas fa-coffee"></i> Plan profesional</h2>
                 <p>Ideal para grandes comercios y estadísticas en vivo</p>
                 <ul class="grid-2 gap full-width">
@@ -96,7 +96,7 @@
                     <li>Acceso al Peso Chileno y Uruguayo</li>
                 </ul class="grid-2 full-width">
             </li>
-            <li class="grid-2 gap box blue padding">
+            <li class="grid-2 gap box blue padding rounded">
                 <h2 class="text-center"><i class="fas fa-project-diagram"></i> Plan ilimitado</h2>
                 <p>Ideal para grandes softwares de investigación y/o data science</p>
                 <ul class="grid-2 gap full-width">
@@ -109,12 +109,12 @@
             </li>
         </ul>
 
-        <div class="video-argentina not-mobile"> <!-- video argentina -->
+        <div class="video-argentina not-mobile rounded"> <!-- video argentina -->
             <video width="100%" height="100%" autoplay muted loop>
                 <source src="video/argentina-en-8-bits.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
         </div> <!-- video argentina -->
-    </div>
+    </div> --}}
 </div>
